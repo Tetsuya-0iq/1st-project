@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <title>Welcome to my first site</title>
         <style>
         p{
         margin: 0;
+        color: white;
+        }
+        body{
+            background-image: url(https://images6.alphacoders.com/114/thumb-1920-1148181.png);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
         }
         .begin{
             font-family: arial;
@@ -22,42 +33,139 @@
         .img_basil{
             display: block;
             margin: 20px auto;
-            max-width: 75%;
-            border: solid 5px purple;
+            max-width:99%;
+            max-height: 500px;
+            border: solid 5px rgba(253, 54, 253, 0.434);
             border-radius: 50px;
+            align-items: center;
+            text-align: center;
         }
         .me_and_career{
+            text-align: center;
             display: flex;
             gap: 400px;
             flex-direction: row;
-            text-align: center;
-            justify-content:space-evenly;
+            justify-content: center;
             position: relative;
             bottom: 10px;
         }
+        .heading1{
+            text-align: center;
+        }
+        .pluto{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 15%;
+            height: auto;
+
+        }
+        .things_contact{
+            text-align: center;
+            display: flex;
+            padding-top: 20px;
+            gap: 475px;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            bottom: 10px;
+        }
+        .you_contact{
+            color:yellow;
+            font-size: 24px;
+            position: relative;
+            right: 130px;
+        }
+        .like{
+            font-size: 24px;
+            color:yellow;
+        }
+        .contact{
+            display: flex;
+            gap: 25px;
+            position: relative;
+            left: 1000px;
+            top: -50px;
+        }
+        .icon{ 
+            display: block; 
+            width: 50px; 
+            height: 50px;
+            cursor: pointer;
+        }
+        .ship{
+            position: relative;
+            width: 80%;
+            height: 60px;
+            margin-top: 80px;   
+        }
+        .spaceboy{
+        position: absolute;
+        bottom: 0;
+        width: 175px;
+        animation: flyLoop 6s linear infinite;
+        }
+
+        @keyframes flyLoop {
+        0% {
+        transform: translateX(-200px) scaleX(-1);
+        }
+        49% {
+        transform: translateX(100vw) scaleX(-1);
+        }
+        50% {
+        transform: translateX(100vw) scaleX(1);
+        }
+        100% {
+        transform: translateX(-200px) scaleX(1);
+        }
+        }
         </style>
     </head>
-    <H1 class="begin"style="color: blue;">Welcome To This Page</H1>
-            <body bgcolor="lightblue">
-        <div class="intro">
-        <p>This is the first time I have used HTML, so I want to tell you something about me.</p>
-        <p>My profile:</p>
-        </div>
-        <img class="img_basil" src=https://wallpaperaccess.com/full/14624730.jpg>
-        <div class="me_and_career">
-        <p><strong><span style="font-size: 23px;">About Myself</span></strong><br>
-            I'm Tetsuya, I'm 16 years old. <br>
-            Currently in my first year of highschool.<br>
-            I like anime, manga, manwha, gaming.<br>
-            I'm also saving to get my car certificate.
-        </p>   
-        <p><strong><span style="font-size: 23px;">Career</span></strong> <br>
-        Currently in 4VWO AKA first year highschool. <br>
-        Trying to get into TU/e and study either:<br>
-        biomedical engineering or programming.<br>
-        Currently I'm working at my parents restaurant<br> and I'm saving to get my car certificate.
-        </p>
-        </div>
-            </body>
+    <H1 class="begin">Welcome To This Page</H1>
+        <body>
+            <div class="intro">
+                <p>This is the first time I have used HTML, so I want to tell you something about me.</p>
+                <p>My profile:</p>
+            </div>
+                <img class="img_basil" src=https://wallpaperaccess.com/full/14624730.jpg>
+                
+            <div class="me_and_career">
+                <p><strong class="heading1"><span style="color:yellow; font-size: 24px;">About Myself</span></strong><br>
+                I'm Tetsuya, I'm 16 years old. <br>
+                Currently in my first year of highschool.<br>
+                I'm also saving to get my car certificate<br>
+                and learning coding with MIMO.
+                </p>
+                <img class="pluto" src=https://static.wikia.nocookie.net/omori/images/a/a6/PLUTO_COMBINED.gif/revision/latest?cb=20210409062915> 
+                <p><strong><span style="color:yellow; font-size: 23px;">Career</span></strong> <br>
+                Currently in 4VWO AKA fourth year highschool. <br>
+                Trying to get into TU/e and study either:<br>
+                biomedical engineering or programming.<br>
+                Currently I'm working at my parents restaurant<br> and I'm saving to get my car certificate.
+                </p>
+            </div>
+
+            <div class="things_contact">
+                <p><strong class="like">Things I like:</strong><br>
+                <strong style="color: black;">Gaming:</strong> HSR, Roblox, Elding Ring, Hollow knight, Omori (obviously)<br> 
+                <strong style="color: black;">Manga/Manhwa:</strong> ORV, One Piece,  <br> 
+                <strong style="color: black;">Characters:</strong> Chopper, Sunny, Aubrey, 
+                </p>
+        
+                <p><strong class="you_contact">You can contact me on:</strong></p> 
+        
+            </div>
+            <div class="contact">
+                <a href="https://steamcommunity.com/profiles/76561199444326733"><img src="https://i.pinimg.com/1200x/a5/9e/6a/a59e6ab8ee57af34149f3c9509efa0f1.jpg" alt="steam" class="icon"></a>
+                <a href="https://discordapp.com/users/835184177518346321"><img src="https://i.pinimg.com/1200x/2d/5e/95/2d5e9576fe4872125985884e19646572.jpg"alt="discord" class="icon"></a>
+                <a href="https://www.tiktok.com/@d4vey_db?_r=1&_t=ZG-96gdCbhq60O"><img src="https://i.pinimg.com/736x/f6/9e/ad/f69eada5147f0cac55cbd97391a83279.jpg" alt="tiktok" class="icon"></a>
+            </div>
+
+            <div class="ship">
+                <img src="https://preview.redd.it/the-best-ship-in-omori-v0-m3a7g65fsqy91.png?auto=webp&s=88449999e26d676eefa893630357013266c86a77" class="spaceboy">
+            </div>
+        </body>
 </html>
 
